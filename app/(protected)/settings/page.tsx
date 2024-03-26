@@ -48,6 +48,9 @@ const SettingsPage = () => {
                 if(data.success) {
                     update()
                     setSuccess(data.success)
+                    setTimeout(()=>{
+                        window.location.href = '/server';
+                    }, 2000);
                 }
               })
               .catch(() => setError("Something went wrong!"))

@@ -82,7 +82,6 @@ const LoginForm = () => {
                                                 <Input {...field} disabled={isPending} placeholder='6 digit here' type='text'/>
                                             </FormControl>
                                             <FormMessage/>
-            
                                         </FormItem>
                                         
                                 )}
@@ -103,7 +102,7 @@ const LoginForm = () => {
                                             </FormControl>
                                             <FormMessage/>
                                         </FormItem>
-                                    
+                                                                         
                                 )}
                                 />
                                 
@@ -133,8 +132,7 @@ const LoginForm = () => {
                 <FormSuccess message={success}/>
                 <Button disabled={isPending} type='submit' className='w-full'>
                     {showTwoFactor ? "Confirm" : "Login"}
-                </Button>
-                             
+                </Button>                
             </form>
         </Form>
     </CardWrapper>
