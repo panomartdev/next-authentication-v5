@@ -13,6 +13,7 @@ import { FormSuccess } from '../form-success';
 import { register } from '@/actions/register';
 
 
+
 const RegisterForm = () => {
   
   const [error, setError] = useState<string | undefined>("");
@@ -61,7 +62,6 @@ const RegisterForm = () => {
                                 </FormControl>
                                 <FormMessage/>
                             </FormItem>
-                            
                        )}
                     />
                     <FormField 
@@ -91,7 +91,7 @@ const RegisterForm = () => {
                                 </FormControl>
                                 <FormMessage/>
                             </FormItem>
-                            
+
                        )}
                     />
                     
@@ -101,7 +101,7 @@ const RegisterForm = () => {
                 <Button disabled={isPending} type='submit' className='w-full'>
                     Create an account
                 </Button>
-                                        
+
             </form>
         </Form>
     </CardWrapper>
